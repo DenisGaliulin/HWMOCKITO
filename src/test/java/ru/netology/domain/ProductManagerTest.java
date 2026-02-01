@@ -122,7 +122,11 @@ public class ProductManagerTest {
         int actual = manager.findLast().length;
         int expected = 2;
 
+        String[] actual2 = manager.findLast();
+        String[] expected2 = {"Фильм 2", "Фильм 1"};
+
         assertEquals(expected, actual);
+        assertArrayEquals(expected2, actual2);
     }
 
     @Test
